@@ -8,7 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
   <!-- ==================== HEADER ==================== -->
   <div class="bg-yellow-300 h-[100px]">
     <header class="flex lg:justify-between justify-center gap-2 items-center p-4 container mx-auto flex-wrap">
@@ -149,31 +149,32 @@
 
 
     <!-- ==================== WHEN POWER FEELS THREATENED SECTION ==================== -->
-    <section class="py-10 lg:px-20">
-      <div class="flex flex-col lg:flex-row items-center gap-8">
-
-        <!-- Image Section -->
-        <div class="w-full lg:w-2/5 bg-green-400 rounded-xl overflow-hidden shadow-lg p-4 pb-10">
-          <img src="static/images/education.jpg" alt="Education" class="w-full h-auto object-cover">
-          <p class="text-xs font-bold p-3">Credits: The Irrawaddy</p>
+    <section class="py-5">
+      <div class="mission grid grid-cols-1 lg:grid-cols-2 lg:p-20 lg:items-center">
+        <!-- Image -->
+        <div class="max-w-full lg:max-w-[400px] h-fit flex flex-col items-center justify-center bg-green-400 rounded-lg mx-auto px-3 pt-5 order-1">
+          <div class="image w-full h-[300px]">
+            <img src="static/images/education.jpg" alt="mission" class="w-full h-full object-cover rounded-md">
+          </div>
+          <div class="card_bottom flex w-full relative">
+            <p class="pt-2 pb-10 font-semibold">Credits: The Irrawaddy</p>
+            <img src="static/images/emoji(2).png" alt="" class="absolute -right-5 -bottom-5 rotate-[-20deg]">
+          </div>
         </div>
 
-        <!-- Text Section -->
-        <div class="w-full lg:w-1/2 text-center lg:text-left">
-          <h2 class="text-3xl lg:text-5xl font-bold leading-snug">
-            When power feels threatened, it begins
-            <img src="static/images/emoji(1).png" alt="emoji" class="inline w-20 lg:w-30 lg:h-30 mx-2">
-            by dismantling education and silencing the curious
-          </h2>
+        <!-- Description -->
+        <div class="description py-5 space-y-10 order-2">
+          <p class="text-4xl lg:text-6xl font-bold text-center">
+            When power feels threatened, it begins <img src="static/images/emoji(1).png" alt="emoji" class="inline align-middle"> by dismantling education and silencing the curious
+          </p>
         </div>
-
       </div>
     </section>
 
 
     <!-- ==================== SCHOOLS IN MYANMAR SECTION ==================== -->
     <section class="py-10 lg:px-20">
-      <h2 class="text-3xl font-bold mb-8 text-center lg:text-left">Schools in Myanmar</h2>
+      <h2 class="text-4xl font-bold mb-8 text-center lg:text-left">Schools in Myanmar</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
         <div class="bg-yellow-400 rounded-2xl overflow-hidden shadow-md flex flex-col p-4">
@@ -304,7 +305,7 @@
     </section>
 
     <!-- ==================== FAQ SECTION ==================== -->
-    <section class="h-screen md:h-auto lg:h-auto">
+    <section class="md:h-auto lg:px-20 lg:h-auto mb-10">
       <div class="flex flex-col md:flex-row lg:flex-row items-center justify-center">
         <div class="image">
           <img src="static/images/discuss.png" alt="discuss">
@@ -319,9 +320,9 @@
     </section>
 
     <!-- ==================== CONTACT US SECTION ==================== -->
-    <section class="h-screen md:h-auto lg:h-auto">
-      <div class="flex flex-col md:flex-row lg:flex-row items-center justify-center">
-        <div class="detail leading-lg space-y-10 w-1/2 bg-yellow-300 rounded-2xl px-5 py-2">
+    <section class="md:h-auto lg:h-auto lg:px-20">
+      <div class="flex flex-col md:flex-row lg:flex-row items-center justify- ">
+        <div class="detail leading-lg space-y-10 w-full lg:w-1/2 bg-yellow-300 rounded-2xl px-5 py-2">
           <h3 class="text-4xl lg:text-6xl font-bold">Contact Us</h3>
           <div>
             <p class="text-lg font-semibold py-10">Instagram</p>
